@@ -1,0 +1,82 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+
+# Bookmarks:
+
+# Left window history (oldest to newest):
+d/home/siddharth
+	dotfiles
+3
+d/home/siddharth/dotfiles
+	..
+0
+d/home/siddharth
+	dotfiles
+3
+d/home
+	siddharth
+1
+d/home/siddharth
+	dotfiles
+3
+d/home/siddharth/.config/nvim
+	..
+0
+d/home/siddharth/nokia.com
+	siteminder-dom-xss-https___wam-login.ext.nokia.com_siteminderagent_forms_smpwservices.fcc_USERNAME=\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e&SMAUTHREASON=7.md
+41
+d/home/siddharth
+	nokia.com
+4
+d/home/siddharth/nokia.com
+	CVE-2020-10770-https___stage.impact.idc.nokia.com_auth_realms_master_protocol_openid-connect_auth_scope=openid&response_type=code&redirect_uri=valid&state=cfx&nonce=cfx&client_id=security-admin-console&request_uri=http___cb9h8ne464vk8i000010qfss8m6wmcmnu.
+4
+d/home/siddharth
+	nokia.com
+4
+d/home/siddharth/nokia.com
+	CVE-2020-3452-https___nra-emea-de-fra-qa-2.net.nokia.com_+CSCOT+_translation-table_type=mst&textdomain=_%2bCSCOE%2b_portal_inc.lua&default-language&lang=.._.md
+9
+
+# Right window history (oldest to newest):
+D/home/siddharth
+	..
+0
+D/home/siddharth/.config/nvim
+	
+0
+D/home/siddharth/nokia.com
+	
+0
+
+# Command line history (oldest to newest):
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+pdotfiles
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/siddharth/.local/share/vifm/Trash/000_credentials-disclosure-https___india.mobileshop.nokia.com.md
+	/home/siddharth/nokia.com/credentials-disclosure-https___india.mobileshop.nokia.com.md
+t/home/siddharth/.local/share/vifm/Trash/000_credentials-disclosure-https___www.dac.nokia.com_.md
+	/home/siddharth/nokia.com/credentials-disclosure-https___www.dac.nokia.com_.md
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

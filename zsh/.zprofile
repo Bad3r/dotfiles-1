@@ -1,14 +1,9 @@
-# Start my graphical interface
-if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx > $HOME/.cache/startx.log 2>&1
-fi 
-
 # Default programs:
 export EDITOR="nvim"
-export TERMINAL="kitty"
-export BROWSER="firefox"
-export READER="zathura"
-export FILE="thunar"
+#export TERMINAL="kitty"
+#export BROWSER="firefox"
+#export READER="zathura"
+#export FILE="thunar"
 
 # Clean up the $HOME directory
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -43,7 +38,6 @@ export LESS_TERMCAP_ue=$(printf '\e[0m')     # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
 # Other
-export SUDO_ASKPASS=~/bin/utils/rofi-askpass
 export FZF_DEFAULT_COMMAND='ag --hidden -g "" --ignore ".git" --ignore .npm --ignore .node_modules --ignore "*Trash*" --ignore ".java" --ignore "undo" --ignore .cpan'
 
 # https://github.com/pypa/pip/issues/8090#issuecomment-803363268

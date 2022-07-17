@@ -6,6 +6,8 @@ prompt pure
 export PURE_PROMPT_SYMBOL="$"
 export PURE_PROMPT_VICMD_SYMBOL="$"
 
+zstyle ':prompt:pure:path' color green
+zstyle ':prompt:pure:prompt:success' color yellow
 
 # Load my aliases 
 [ -f ~/.config/aliases ] && source ~/.config/aliases
@@ -101,36 +103,16 @@ source $HOME/.zprofile
 source $HOME/.zshenv
 
 # Load my ZSH plugins
-#source "$HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "$HOME/.zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh"
 source "$HOME/.zsh/plugins/fzf-tab/fzf-tab.plugin.zsh"
 
 # Use fzf when doing CTRL-r
 [[ -e "/usr/share/fzf/key-bindings.zsh" ]] && source "/usr/share/fzf/key-bindings.zsh" 
-
-# Search and install packages with yay and fzf
-yi() {
-	SELECTED_PKGS="$(yay -Slq | fzf --header='Install packages' -m --height 100% --preview 'yay -Si {1}')"
-    [[ -n "$SELECTED_PKGS" ]] && yay -S "$SELECTED_PKGS"
-}
-
-# Search and remove packages with yay and fzf
-yr() {
-	SELECTED_PKGS="$(yay -Qsq | fzf --header='Remove packages' -m --height 100% --preview 'yay -Si {1}')"
-    [[ -n "$SELECTED_PKGS" ]] && yay -Rns "$SELECTED_PKGS"
-}
 
 export PATH="/home/siddharth/perl5/bin${PATH:+:${PATH}}"
 export PERL5LIB="/home/siddharth/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
 export PERL_LOCAL_LIB_ROOT="/home/siddharth/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
 export PERL_MB_OPT="--install_base \"/home/siddharth/perl5\""
 export PERL_MM_OPT="INSTALL_BASE=/home/siddharth/perl5"
+export PATH=$PATH:/usr/local/go/bin
 
-# The 'cnf' command is needed. Check the 'bin' directory.
-command_not_found_handler() {
-    mkdir -p "/tmp/command_not_found"
-    echo -n "$1" > "/tmp/command_not_found/command"
-
-    echo "zsh: command not found: $1" && exit 1
-}
-
+source /etc/zsh_command_not_found

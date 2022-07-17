@@ -77,9 +77,6 @@ alias td='tmux detach'
 # I always get strange looks if Im using the terminal in public with dark colors
 alias blend="wal -l -i $HOME/pictures/current/*"
 
-# Launch vifm using vifmrun so that I can have file previews
-alias vifm="vifmrun"
-
 # Packages I Installed
 alias pii="comm -23 <(pacman -Qqett | sort) <(pacman -Qqg base -g base-devel | sort | uniq)"
 
@@ -91,10 +88,6 @@ alias pyup="python3 setup.py sdist && python3 -m twine upload dist/*"
 
 # Open my todo list
 alias todo="notes && vim todo"
-
-# Kitty terminal tends to have issues with the "clear" command it's terminfo files
-# are not available on the server. The alias below fixes it.
-alias ssh="kitty +kitten ssh"
 
 # Launch jupyter notebook
 alias jn="jupyter notebook"
@@ -119,3 +112,6 @@ alias woah="nmap -sC -sV -A -Pn"
 alias feh="feh --no-fehbg"
 alias mitmproxy="mitmproxy --set confdir=$XDG_CONFIG_HOME/mitmproxy"                             
 alias mitmweb="mitmweb --set confdir=$XDG_CONFIG_HOME/mitmproxy"
+
+# Quickly change directory into the C drive on Windows
+alias cw="cd /mnt/c/Users/siddh"
