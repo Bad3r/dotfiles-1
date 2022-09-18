@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
 
 # Quick shortcuts to some dirs
-alias dls="cd ~/downloads"
-alias docs="cd ~/documents"
-alias prjs="cd ~/projects"
-alias pics="cd ~/pictures"
+alias dls="cd /mnt/c/Users/siddh/Downloads/"
+alias docs="cd /mnt/c/Users/siddh/Documents/"
+alias prjs="cd /mnt/c/Users/siddh/Projects/"
+alias pics="cd /mnt/c/Users/siddh/Pictures"
 alias conf="cd ~/.config"
-alias vids="cd ~/videos"
+alias vids="cd /mnt/c/Users/siddh/Videos/"
 alias dots="cd ~/dotfiles"
 alias bin="cd ~/bin"
 alias lbin="cd $HOME/.local/bin"
 alias tmp="cd /tmp"
-alias shots="cd ~/pictures/screenshots"
+alias shots="cd /mnt/c/Users/siddh/Pictures/Screenshots"
 alias ..="cd .."
+alias cw="cd /mnt/c/Users/siddh"
+alias ctf="cd /mnt/c/Users/siddh/Documents/ctf/"
 
 # Quickly edit some files
 alias zshrc="nvim $HOME/.zshrc && source $HOME/.zshrc"
@@ -32,7 +34,7 @@ alias diff="diff --color"
 alias ls="exa"
 alias ll='exa -alF'
 alias la='exa -a'
-alias l='exa -CF'
+alias l='exa -F'
 
 # Basically, lets me know what just happened
 # --interactive     prompt before overwrite
@@ -113,5 +115,5 @@ alias feh="feh --no-fehbg"
 alias mitmproxy="mitmproxy --set confdir=$XDG_CONFIG_HOME/mitmproxy"                             
 alias mitmweb="mitmweb --set confdir=$XDG_CONFIG_HOME/mitmproxy"
 
-# Quickly change directory into the C drive on Windows
-alias cw="cd /mnt/c/Users/siddh"
+# Use explorer.exe to open things. Basically the 'open' command in macOS
+alias open="explorer.exe"
