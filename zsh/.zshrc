@@ -114,5 +114,6 @@ export PERL_LOCAL_LIB_ROOT="/home/siddharth/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_
 export PERL_MB_OPT="--install_base \"/home/siddharth/perl5\""
 export PERL_MM_OPT="INSTALL_BASE=/home/siddharth/perl5"
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:"/home/siddharth/.gem/ruby/2.7.0/bin/"
 
 source /etc/zsh_command_not_found
